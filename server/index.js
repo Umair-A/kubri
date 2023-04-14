@@ -21,7 +21,7 @@ app.use(express.json());
 app.use(cors())
 
 app.get("/", (req,res)=>{
-  res.json("Hello from client");
+  res.send("App is running");
 });
 
 app.get("/session", (req,res)=>{
