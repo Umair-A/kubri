@@ -3,11 +3,14 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { FiSettings } from 'react-icons/fi';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 
-import { Navbar, Footer, Sidebar, ThemeSettings, NotFound } from './components';
-import { Securities, Employees, Pyramid, Customers, Line, Area, Bar, Financial, UniversalSymbols, MakerSession, TakerSession, MakerApiLink, TakerFeeds, TakerExecutionModels } from './pages';
+import { Navbar, Footer, Sidebar, ThemeSettings } from './components';
+import { Securities, Employees, Pyramid, Customers, Line, Area, Bar, Financial, UniversalSymbols, MakerSession, TakerSession, MakerApiLink, TakerFeeds, TakerExecutionModels, HubAggregationModel, MarkupModels } from './pages';
 import './App.css';
 
 import { useStateContext } from './contexts/ContextProvider';
+import RiskAccounts from './pages/RiskAccounts';
+import AssetClassGroup from './pages/AssetClassGroup';
+import RiskUsers from './pages/RiskUsers';
 
 const App = () => {
   const { setCurrentColor, setCurrentMode, currentMode, activeMenu, currentColor, themeSettings, setThemeSettings } = useStateContext();
@@ -71,11 +74,14 @@ const App = () => {
                 <Route path="/universalSymbols" element={(<UniversalSymbols />)} />
                 <Route path="/makerSession" element={(<MakerSession />)} />
                 <Route path="/takerSession" element={(<TakerSession />)} />
-                <Route path="/HubAggregationModel" element={(<NotFound />)} />
+                <Route path="/HubAggregationModel" element={(<HubAggregationModel />)} />
                 <Route path="/MakerApiLink" element={(<MakerApiLink />)} />
                 <Route path="/TakerFeeds" element={(<TakerFeeds />)} />
-                <Route path="/MarkupModels" element={(<NotFound />)} />
+                <Route path="/MarkupModels" element={(<MarkupModels />)} />
                 <Route path="/TakerExecutionModels" element={(<TakerExecutionModels />)} />
+                <Route path="/RiskAccounts" element={(<RiskAccounts />)} />
+                <Route path="/AssetClassGroup" element={(<AssetClassGroup />)} />
+                <Route path="/RiskUsers" element={(<RiskUsers />)} />
                 {/* pages  */}
 
                 <Route path="/employees" element={<Employees />} />
