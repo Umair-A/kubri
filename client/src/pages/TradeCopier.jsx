@@ -4,14 +4,14 @@ import CAccountGroup from '../components/CAccountGroup';
 import ListUsers from '../components/ListUsers';
 import { Header } from '../components';
 
-function RiskUsers() {
+function TradeCopier() {
   return (
     <div className="m-2 md:m-10 mt-24 p-2 md:p-10 bg-white rounded-3xl">
-      <Header category="" title="Risk Users" />
+      <Header category="" title="Trade Copier" />
       <Tab.Group>
         <Tab.List>
-          <Tab className="border dark:bg-gray-800 p-4 focus:border-gray-500 dark:border-gray-700 dark:text-gray-400">Users</Tab>
-          <Tab className=" p-4 border focus:border-gray-500 dark:border-gray-700 dark:text-gray-400">Create a User</Tab>
+          <Tab className="border dark:bg-gray-800 p-4 focus:border-gray-500 dark:border-gray-700 dark:text-gray-400">Direct Reverse Trade Copier</Tab>
+          <Tab className=" p-4 border focus:border-gray-500 dark:border-gray-700 dark:text-gray-400">Create a Direct Reverse Trade Copier</Tab>
 
         </Tab.List>
         <Tab.Panels>
@@ -23,4 +23,4 @@ function RiskUsers() {
   );
 }
 
-export default RiskUsers;
+export default TradeCopier;

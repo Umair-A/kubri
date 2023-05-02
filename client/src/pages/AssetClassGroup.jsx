@@ -3,10 +3,12 @@ import { Tab } from '@headlessui/react';
 import CAssetGroup from '../components/CAssetGroup';
 import CAssetClass from '../components/CAssetClass';
 import ListAssetGroup from '../components/ListAssetGroup';
+import { Header } from '../components';
 
 function AssetClassGroup() {
   return (
     <div className="m-2 md:m-10 mt-24 p-2 md:p-10 bg-white rounded-3xl">
+      <Header category="" title="Asset Class Group" />
       <Tab.Group>
         <Tab.List>
           <Tab className="border dark:bg-gray-800 p-4 focus:border-gray-500 dark:border-gray-700 dark:text-gray-400">List</Tab>

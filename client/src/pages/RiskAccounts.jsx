@@ -3,10 +3,12 @@ import { Tab } from '@headlessui/react';
 import ListRiskAccount from '../components/ListRiskAccount';
 import CAccountGroup from '../components/CAccountGroup';
 import CRiskAccount from '../components/CRiskAccount';
+import { Header } from '../components';
 
 function RiskAccounts() {
   return (
     <div className="m-2 md:m-10 mt-24 p-2 md:p-10 bg-white rounded-3xl">
+      <Header category="" title="Risk Accounts" />
       <Tab.Group>
         <Tab.List>
           <Tab className="border dark:bg-gray-800 p-4 focus:border-gray-500 dark:border-gray-700 dark:text-gray-400">List</Tab>

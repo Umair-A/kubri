@@ -11,6 +11,9 @@ import { useStateContext } from './contexts/ContextProvider';
 import RiskAccounts from './pages/RiskAccounts';
 import AssetClassGroup from './pages/AssetClassGroup';
 import RiskUsers from './pages/RiskUsers';
+import TradeCopier from './pages/TradeCopier';
+import GiveUpRule from './pages/GiveUpRule';
+import FiltrationPool from './pages/FiltrationPool';
 
 const App = () => {
   const { setCurrentColor, setCurrentMode, currentMode, activeMenu, currentColor, themeSettings, setThemeSettings } = useStateContext();
@@ -82,6 +85,9 @@ const App = () => {
                 <Route path="/RiskAccounts" element={(<RiskAccounts />)} />
                 <Route path="/AssetClassGroup" element={(<AssetClassGroup />)} />
                 <Route path="/RiskUsers" element={(<RiskUsers />)} />
+                <Route path="/TradeCopier" element={(<TradeCopier />)} />
+                <Route path="/GiveUpRule" element={(<GiveUpRule />)} />
+                <Route path="/FiltrationPool" element={(<FiltrationPool />)} />
                 {/* pages  */}
 
                 <Route path="/employees" element={<Employees />} />

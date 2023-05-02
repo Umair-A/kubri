@@ -2,8 +2,6 @@ import React from 'react';
 import { AiOutlineStock } from 'react-icons/ai';
 import { FiShoppingBag, FiBarChart, FiCreditCard, FiStar, FiShoppingCart } from 'react-icons/fi';
 import { BsBoxSeam, BsCurrencyDollar, BsShield, BsChatLeft } from 'react-icons/bs';
-import { IoMdContacts } from 'react-icons/io';
-import { RiContactsLine } from 'react-icons/ri';
 import { MdOutlineSupervisorAccount } from 'react-icons/md';
 import { HiOutlineRefresh } from 'react-icons/hi';
 import { TiTick } from 'react-icons/ti';
@@ -1032,10 +1030,6 @@ export const links = [
         name: 'TakerExecutionModels',
         icon: <FiShoppingBag />,
       },
-      {
-        name: 'Maker Api Link',
-        icon: <FiShoppingBag />,
-      },
     ],
   },
   {
@@ -1058,21 +1052,13 @@ export const links = [
         name: 'RiskUsers',
         icon: <FiShoppingBag />,
       },
-      {
-        name: 'Maker Api Link',
-        icon: <FiShoppingBag />,
-      },
     ],
   },
   {
     title: 'Trade Copier',
     links: [
       {
-        name: 'Maker Sessions',
-        icon: <FiShoppingBag />,
-      },
-      {
-        name: 'Maker Api Link',
+        name: 'TradeCopier',
         icon: <FiShoppingBag />,
       },
     ],
@@ -1081,11 +1067,7 @@ export const links = [
     title: 'GiveUp Rule',
     links: [
       {
-        name: 'Maker Sessions',
-        icon: <FiShoppingBag />,
-      },
-      {
-        name: 'Maker Api Link',
+        name: 'GiveUpRule',
         icon: <FiShoppingBag />,
       },
     ],
@@ -1094,11 +1076,7 @@ export const links = [
     title: 'Filtration Pool',
     links: [
       {
-        name: 'Maker Sessions',
-        icon: <FiShoppingBag />,
-      },
-      {
-        name: 'Maker Api Link',
+        name: 'FiltrationPool',
         icon: <FiShoppingBag />,
       },
     ],
@@ -1107,11 +1085,11 @@ export const links = [
     title: 'Trading',
     links: [
       {
-        name: 'Maker Sessions',
+        name: 'Broker View',
         icon: <FiShoppingBag />,
       },
       {
-        name: 'Maker Api Link',
+        name: 'Trader View',
         icon: <FiShoppingBag />,
       },
     ],
@@ -1120,11 +1098,55 @@ export const links = [
     title: 'Reports',
     links: [
       {
-        name: 'Maker Sessions',
+        name: 'Position',
         icon: <FiShoppingBag />,
       },
       {
-        name: 'Maker Api Link',
+        name: 'Orders',
+        icon: <FiShoppingBag />,
+      },
+      {
+        name: 'Maker Orders',
+        icon: <FiShoppingBag />,
+      },
+      {
+        name: 'GiveUp Orders',
+        icon: <FiShoppingBag />,
+      },
+      {
+        name: 'Legs Report',
+        icon: <FiShoppingBag />,
+      },
+      {
+        name: 'Fills Report',
+        icon: <FiShoppingBag />,
+      },
+      {
+        name: 'MT4 Reports',
+        icon: <FiShoppingBag />,
+      },
+      {
+        name: 'Mt5 Reports',
+        icon: <FiShoppingBag />,
+      },
+      {
+        name: 'Risk Account Statements',
+        icon: <FiShoppingBag />,
+      },
+      {
+        name: 'Trader Transaction',
+        icon: <FiShoppingBag />,
+      },
+      {
+        name: 'Price Improvement',
+        icon: <FiShoppingBag />,
+      },
+      {
+        name: 'Maker National',
+        icon: <FiShoppingBag />,
+      },
+      {
+        name: 'Symbol Notional',
         icon: <FiShoppingBag />,
       },
     ],
@@ -1133,11 +1155,11 @@ export const links = [
     title: 'Risk Management',
     links: [
       {
-        name: 'Maker Sessions',
+        name: 'Quant Based Hybrid',
         icon: <FiShoppingBag />,
       },
       {
-        name: 'Maker Api Link',
+        name: 'Exposure Based Hedging',
         icon: <FiShoppingBag />,
       },
     ],
@@ -1146,29 +1168,24 @@ export const links = [
     title: 'Monitoring',
     links: [
       {
-        name: 'Maker Sessions',
+        name: 'Logs',
         icon: <FiShoppingBag />,
       },
       {
-        name: 'Maker Api Link',
+        name: 'Trader Status',
+        icon: <FiShoppingBag />,
+      },
+      {
+        name: 'Maker Status',
+        icon: <FiShoppingBag />,
+      },
+      {
+        name: 'Feeder Status',
         icon: <FiShoppingBag />,
       },
     ],
   },
 
-  {
-    title: 'Pages',
-    links: [
-      {
-        name: 'employees',
-        icon: <IoMdContacts />,
-      },
-      {
-        name: 'customers',
-        icon: <RiContactsLine />,
-      },
-    ],
-  },
   // {
   //   title: 'Apps',
   //   links: [
