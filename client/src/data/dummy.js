@@ -985,49 +985,49 @@ export const links = [
     title: 'Hub',
     links: [
       {
-        name: 'securities',
+        name: 'Securities',
         icon: <FiShoppingBag />,
       },
       {
-        name: 'universalSymbols',
+        name: 'Universal-Symbols',
         icon: <FiShoppingBag />,
       },
       {
-        name: 'HubAggregationModel',
+        name: 'Hub-Aggregation-Model',
         icon: <FiShoppingBag />,
       },
       {
-        name: 'MarkupModels',
-        icon: <FiShoppingBag />,
-      },
-    ],
-  },
-  {
-    title: 'Makers',
-    links: [
-      {
-        name: 'makerSession',
-        icon: <FiShoppingBag />,
-      },
-      {
-        name: 'MakerApiLink',
+        name: 'Spread',
         icon: <FiShoppingBag />,
       },
     ],
   },
   {
-    title: 'Takers',
+    title: 'LP',
     links: [
       {
-        name: 'TakerSession',
+        name: 'LP-Session',
         icon: <FiShoppingBag />,
       },
       {
-        name: 'TakerFeeds',
+        name: 'LP-Api-Link',
+        icon: <FiShoppingBag />,
+      },
+    ],
+  },
+  {
+    title: 'Brokers',
+    links: [
+      {
+        name: 'Broker-Session',
         icon: <FiShoppingBag />,
       },
       {
-        name: 'TakerExecutionModels',
+        name: 'Broker-Feeds',
+        icon: <FiShoppingBag />,
+      },
+      {
+        name: 'Broker-Execution-Models',
         icon: <FiShoppingBag />,
       },
     ],
@@ -1036,47 +1036,47 @@ export const links = [
     title: 'Risk Accounts',
     links: [
       {
-        name: 'RiskAccounts',
+        name: 'Risk-Accounts',
         icon: <FiShoppingBag />,
       },
       {
-        name: 'AssetClassGroup',
+        name: 'Asset-Class-Group',
+        icon: <FiShoppingBag />,
+      },
+    ],
+  },
+  // {
+  //   title: 'Risk Users',
+  //   links: [
+  //     {
+  //       name: 'RiskUsers',
+  //       icon: <FiShoppingBag />,
+  //     },
+  //   ],
+  // },
+  // {
+  //   title: 'Trade Copier',
+  //   links: [
+  //     {
+  //       name: 'TradeCopier',
+  //       icon: <FiShoppingBag />,
+  //     },
+  //   ],
+  // },
+  {
+    title: 'Link Rule',
+    links: [
+      {
+        name: 'Link-Rule',
         icon: <FiShoppingBag />,
       },
     ],
   },
   {
-    title: 'Risk Users',
+    title: 'Filtration',
     links: [
       {
-        name: 'RiskUsers',
-        icon: <FiShoppingBag />,
-      },
-    ],
-  },
-  {
-    title: 'Trade Copier',
-    links: [
-      {
-        name: 'TradeCopier',
-        icon: <FiShoppingBag />,
-      },
-    ],
-  },
-  {
-    title: 'GiveUp Rule',
-    links: [
-      {
-        name: 'GiveUpRule',
-        icon: <FiShoppingBag />,
-      },
-    ],
-  },
-  {
-    title: 'Filtration Pool',
-    links: [
-      {
-        name: 'FiltrationPool',
+        name: 'Filtration',
         icon: <FiShoppingBag />,
       },
     ],
@@ -1085,11 +1085,11 @@ export const links = [
     title: 'Trading',
     links: [
       {
-        name: 'Broker View',
+        name: 'Broker-View',
         icon: <FiShoppingBag />,
       },
       {
-        name: 'Trader View',
+        name: 'Trader-View',
         icon: <FiShoppingBag />,
       },
     ],
@@ -1106,47 +1106,47 @@ export const links = [
         icon: <FiShoppingBag />,
       },
       {
-        name: 'Maker Orders',
+        name: 'LP-Orders',
         icon: <FiShoppingBag />,
       },
       {
-        name: 'GiveUp Orders',
+        name: 'Give-Up-Orders',
         icon: <FiShoppingBag />,
       },
       {
-        name: 'Legs Report',
+        name: 'Legs-Report',
         icon: <FiShoppingBag />,
       },
       {
-        name: 'Fills Report',
+        name: 'Fills-Report',
         icon: <FiShoppingBag />,
       },
       {
-        name: 'MT4 Reports',
+        name: 'MT4Reports',
         icon: <FiShoppingBag />,
       },
       {
-        name: 'Mt5 Reports',
+        name: 'Mt5Reports',
         icon: <FiShoppingBag />,
       },
       {
-        name: 'Risk Account Statements',
+        name: 'Risk-Account-Statements',
         icon: <FiShoppingBag />,
       },
       {
-        name: 'Trader Transaction',
+        name: 'Trader-Transaction',
         icon: <FiShoppingBag />,
       },
       {
-        name: 'Price Improvement',
+        name: 'Price-Improvement',
         icon: <FiShoppingBag />,
       },
       {
-        name: 'Maker National',
+        name: 'LP-National',
         icon: <FiShoppingBag />,
       },
       {
-        name: 'Symbol Notional',
+        name: 'Symbol-Notional',
         icon: <FiShoppingBag />,
       },
     ],
@@ -1155,11 +1155,11 @@ export const links = [
     title: 'Risk Management',
     links: [
       {
-        name: 'Quant Based Hybrid',
+        name: 'Quant-Based-Hybrid',
         icon: <FiShoppingBag />,
       },
       {
-        name: 'Exposure Based Hedging',
+        name: 'Exposure-Based-Hedging',
         icon: <FiShoppingBag />,
       },
     ],
@@ -1168,19 +1168,19 @@ export const links = [
     title: 'Monitoring',
     links: [
       {
-        name: 'Logs',
+        name: 'Journals',
         icon: <FiShoppingBag />,
       },
       {
-        name: 'Trader Status',
+        name: 'Broker-Status',
         icon: <FiShoppingBag />,
       },
       {
-        name: 'Maker Status',
+        name: 'LP-Status',
         icon: <FiShoppingBag />,
       },
       {
-        name: 'Feeder Status',
+        name: 'Feeder-Status',
         icon: <FiShoppingBag />,
       },
     ],

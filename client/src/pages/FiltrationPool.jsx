@@ -7,11 +7,11 @@ import { Header } from '../components';
 function FiltrationPool() {
   return (
     <div className="m-2 md:m-10 mt-24 p-2 md:p-10 bg-white rounded-3xl">
-      <Header category="" title="Filtration Pool" />
+      <Header category="" title="Filtration" />
       <Tab.Group>
         <Tab.List>
-          <Tab className="border dark:bg-gray-800 p-4 focus:border-gray-500 dark:border-gray-700 dark:text-gray-400">Filtration Pool</Tab>
-          <Tab className=" p-4 border focus:border-gray-500 dark:border-gray-700 dark:text-gray-400">Create a Filtration Pool</Tab>
+          <Tab className="border dark:bg-gray-800 p-4 focus:border-gray-500 dark:border-gray-700 dark:text-gray-400">Filtration</Tab>
+          <Tab className=" p-4 border focus:border-gray-500 dark:border-gray-700 dark:text-gray-400">Create a Filtration</Tab>
 
         </Tab.List>
         <Tab.Panels>

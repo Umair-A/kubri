@@ -3,14 +3,14 @@ import { Tab } from '@headlessui/react';
 import MakerLink from '../components/MakerLink';
 import { CMakerApiLink, Header } from '../components';
 
-function MakerApiLink() {
+function LPApiLink() {
   return (
     <div className="m-2 md:m-10 mt-24 p-2 md:p-10 bg-white rounded-3xl">
-      <Header category="" title="Maker APi Link" />
+      <Header category="" title="LP APi Link" />
       <Tab.Group>
         <Tab.List>
-          <Tab className="border dark:bg-gray-800 p-4 focus:border-gray-500 dark:border-gray-700 dark:text-gray-400">Maker Api Link</Tab>
-          <Tab className=" p-4 border focus:border-gray-500 dark:border-gray-700 dark:text-gray-400">Create a Maker Api Link</Tab>
+          <Tab className="border dark:bg-gray-800 p-4 focus:border-gray-500 dark:border-gray-700 dark:text-gray-400">LP Api Link</Tab>
+          <Tab className=" p-4 border focus:border-gray-500 dark:border-gray-700 dark:text-gray-400">Create a LP Api Link</Tab>
         </Tab.List>
         <Tab.Panels>
           <Tab.Panel><MakerLink /></Tab.Panel>
@@ -21,4 +21,4 @@ function MakerApiLink() {
   );
 }
 
-export default MakerApiLink;
+export default LPApiLink;
