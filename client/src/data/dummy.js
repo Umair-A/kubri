@@ -1,4 +1,9 @@
+/* eslint-disable arrow-parens */
+/* eslint-disable consistent-return */
+/* eslint-disable prefer-destructuring */
+/* eslint-disable prefer-const */
 import React from 'react';
+import axios from 'axios';
 import { AiOutlineStock } from 'react-icons/ai';
 import { FiShoppingBag, FiBarChart, FiCreditCard, FiStar, FiShoppingCart } from 'react-icons/fi';
 import { BsBoxSeam, BsCurrencyDollar, BsShield, BsChatLeft } from 'react-icons/bs';
@@ -409,66 +414,58 @@ export const LinePrimaryYAxis = {
 
 export const customersGrid = [
   { type: 'checkbox', width: '50' },
-  { headerText: 'UniversalSymbols',
+  { field: 'universal_symbols',
+    headerText: 'UniversalSymbols',
     width: '150',
-    template: customerGridImage,
     textAlign: 'Center' },
-  { field: 'ProjectName',
+  { field: 'security',
     headerText: 'Security',
     width: '150',
     textAlign: 'Center' },
-  { field: 'Base',
+  { field: 'base',
     headerText: 'Base',
     width: '130',
     format: 'yMd',
     textAlign: 'Center',
-    template: customerGridBase },
+  },
   {
-    field: 'Quote',
+    field: 'quote',
     headerText: 'Quote',
     width: '100',
     format: 'C2',
     textAlign: 'Center',
-    template: customerGridQuote },
-  { field: 'Category',
+  },
+  { field: 'categories',
     headerText: 'Category',
     width: '100',
     format: 'yMd',
     textAlign: 'Center',
-    template: customerGridCategory },
+  },
 
-  { field: 'Location',
+  { field: 'isin',
     headerText: 'ISIN',
     width: '150',
     textAlign: 'Center' },
 
-  { field: 'Description',
+  { field: 'description',
     headerText: 'Description',
     width: '150',
     textAlign: 'Center' },
 
-  { field: 'Digits',
+  { field: 'digits',
     headerText: 'Digits',
     width: '150',
     textAlign: 'Center' },
 
-  { field: 'Multiplyer',
+  { field: 'exposure_multiplyer',
     headerText: 'Multiplyer',
     width: '150',
     textAlign: 'Center' },
-
-  { field: 'Sessions',
+  { type: 'checkbox', width: '50' },
+  { field: 'sessions',
     headerText: 'Sessions',
     width: '150',
     textAlign: 'Center' },
-
-  { field: 'CustomerID',
-    headerText: 'Customer ID',
-    width: '120',
-    textAlign: 'Center',
-    isPrimaryKey: true,
-  },
-
 ];
 
 export const listsGrid = [
@@ -951,15 +948,23 @@ export const listsDataFeedGrid = [
 ];
 
 export const employeesGrid = [
-  { headerText: 'Securities',
+  // { field: 'id',
+  //   headerText: 'id',
+  //   width: '150',
+  //   textAlign: 'Center' },
+  { field: 'securities',
+    headerText: 'Securities',
     width: '150',
-    template: gridEmployeeProfile,
     textAlign: 'Center' },
-  { field: 'Title',
+  { field: 'description',
     headerText: 'Description',
-    width: '170',
-    textAlign: 'Center',
-    template: gridEmployeeDescription },
+    width: '150',
+    textAlign: 'Center' },
+  // { field: 'Title',
+  //   headerText: 'Description',
+  //   width: '170',
+  //   textAlign: 'Center',
+  //   template: gridEmployeeDescription },
   // { headerText: 'Country',
   //   width: '120',
   //   textAlign: 'Center',
@@ -1562,15 +1567,15 @@ export const userProfileData = [
 export const customersData = [
   {
     CustomerID: 1001,
-    CustomerName: 'ADAUSD',
-    ProjectName: 'CRYPTO',
+    UniversalSymbol: 'ADAUSD',
+    Security: 'CRYPTO',
     Base: 'USD',
     Quote: 'USD',
     Category: 'None',
     Description: 'Cardano vs US Dollar',
     Digits: '5',
     Multiplyer: '1',
-    Sessions: 'session',
+    Sessions: 'MON,00:00-23:59;TUE,00:00-23:59;',
     StatusBg: '#8BE78B',
     Weeks: '40',
     Budget: '$2.4k',
@@ -1578,16 +1583,15 @@ export const customersData = [
   },
   {
     CustomerID: 1002,
-
-    CustomerName: 'AUDCAD',
-    ProjectName: 'FX',
+    UniversalSymbol: 'AUDCAD',
+    Security: 'FX',
     Base: 'USD',
     Quote: 'USD',
     Category: 'Spot',
     Description: 'Australlian Dolllar vs Canadian Dollar',
     Digits: '6',
     Multiplyer: '1',
-    Sessions: 'session',
+    Sessions: 'MON,00:00-23:59;TUE,00:00-23:59;',
     StatusBg: '#8BE78B',
     Weeks: '11',
     Budget: '$3.9k',
@@ -1897,51 +1901,6 @@ export const listsTakerFeedData = [
     Sessions: 'MON',
     Enable: ' ',
     Description: 'US Sp5',
-  },
-];
-
-export const employeesData = [
-  {
-    EmployeeID: 1,
-    Name: 'CFD',
-    Title: '',
-    Description: 'Contract for Differences',
-  },
-  {
-    EmployeeID: 2,
-    Name: 'Futures',
-    Description: 'Futures Markets',
-    Title: '',
-    HireDate: '01/02/2021',
-    Country: 'USA',
-    ReportsTo: 'Carson',
-  },
-  {
-    EmployeeID: 3,
-    Name: 'Equities',
-    Description: 'Stocks',
-    Title: '',
-    HireDate: '01/02/2021',
-    Country: 'USA',
-    ReportsTo: 'Carson',
-  },
-  {
-    EmployeeID: 4,
-    Name: 'FX',
-    Description: 'Foreign Exchange Market',
-    Title: '',
-    HireDate: '01/02/2021',
-    Country: 'USA',
-    ReportsTo: 'Carson',
-  },
-  {
-    EmployeeID: 5,
-    Name: 'Crypto',
-    Description: 'Cryptocurrencies',
-    Title: '',
-    HireDate: '01/02/2021',
-    Country: 'USA',
-    ReportsTo: 'Carson',
   },
 ];
 
